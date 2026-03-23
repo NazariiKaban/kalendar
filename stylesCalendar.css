@@ -94,7 +94,7 @@ body {
   border-radius: 50%;
 }
 
-.calendar_days span:not(calendar_days-hidden):hover {
+.calendar_days span:not(.calendar_days-hidden):hover {
   background-color:rgb(5, 5, 5);
 }
 

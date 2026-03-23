@@ -14,7 +14,7 @@ function addTask(){
     li.appendChild(span);
     
   }
-  inputBox.value = "";
+  inputBox.value = '';
   saveData();
 }
 
@@ -42,7 +42,7 @@ showTask()
 
 const monthYearEl = document.getElementById('month-year');
 const daysContainer = document.getElementById('calendar-days');
-const dayNamesContainer = document.querySelector('calendar_day-names');
+const dayNamesContainer = document.querySelector('.calendar_day-names');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
@@ -69,7 +69,7 @@ const renderDayNames = () => {
 
 const renderCalendar = () => {
   const year = currentDate.getFullYear();
-  const mont = currentDate.getMonth();
+  const month = currentDate.getMonth();
 
   monthYearEl.textContent = `${monthNames[month]} ${year}`;
 
@@ -85,13 +85,13 @@ const renderCalendar = () => {
   for (let day = 1; day <= daysInMonth; day++) {
     const isToday = day === new Date().getDate() &&
                         month === new Date().getMonth() &&
-                        year === new Date().getFullYear;
+                        year === new Date().getFullYear();
 
   daysContainer.innerHTML += `<span class="${isToday ? 'today' : ''}">${day}</span>`
   }
 }
 const changeMonth = (delta) => {
-  currentDate.setDateMomtj(currentDate.getMonth() + delta);
+  currentDate.setMonth(currentDate.getMonth() + delta);
   renderCalendar();
 }
 
