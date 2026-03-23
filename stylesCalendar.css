@@ -104,18 +104,18 @@ body {
   width: 450px;
   top: 50%;
   left: 50%;
-  transform: traslate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .decor {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(#3c59db #326af8)
+  background: radial-gradient(#363636, #080a11)
 }
 
 .decor_1 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   bottom: -90px;
   left: -90px;
   opacity: 0.8;
