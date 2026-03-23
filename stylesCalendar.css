@@ -79,8 +79,52 @@ body {
   width: 40px;
   height: 40px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: background-color 0.1s;
 }
 
-.calendar_btn left {
-  position: left;
+.calendar_days span.today {
+  background-color: #1c1d22;
+  color: white;
+  font-weight:bold;
+  border-radius: 50%;
 }
+
+.calendar_days span:not(calendar_days-hidden):hover {
+  background-color:rgb(5, 5, 5);
+}
+
+.decors {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: traslate(-50%, -50%);
+}
+
+.decor {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#3c59db #326af8)
+}
+
+.decor_1 {
+  height: 200px;
+  width: 200px;
+  bottom: -90px;
+  left: -90px;
+  opacity: 0.8;
+}
+
+.decor_2 {
+  height: 180px;
+  width: 180px;
+  top: -100px;
+  right: -60px;
+}
+
