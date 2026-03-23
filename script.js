@@ -79,7 +79,7 @@ const renderCalendar = () => {
   daysContainer.innerHTML = '';
 
   for (let i = 0; i  < firstDay; i++) {
-      daysContainer.innerHTML += '<span class="calendar_days-hidden"></span>'s;
+      daysContainer.innerHTML += '<span class="calendar_days-hidden"></span>';
   } 
 
   for (let day = 1; day <= daysInMonth; day++) {
@@ -90,7 +90,7 @@ const renderCalendar = () => {
   daysContainer.innerHTML += `<span class="${isToday ? 'today' : ''}">${day}</span>`
   }
 }
-const changeMonth = (dalta) => {
+const changeMonth = (delta) => {
   currentDate.setDateMomtj(currentDate.getMonth() + delta);
   renderCalendar();
 }
